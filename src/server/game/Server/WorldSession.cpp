@@ -468,7 +468,7 @@ bool WorldSession::Update(uint32 diff, PacketFilter& updater)
 
         processedPackets++;
 
-        //process only a max amout of packets in 1 Update() call.
+        //process only a max amount of packets in 1 Update() call.
         //Any leftover will be processed in next update
         if (processedPackets > MAX_PROCESSED_PACKETS_IN_SAME_WORLDSESSION_UPDATE)
             break;
